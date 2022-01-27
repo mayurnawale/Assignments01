@@ -1,0 +1,69 @@
+1)
+def next_in_line(lst , n):
+    if(len(lst) == 0):
+        return lst
+    else:
+        lst.append(n)
+        return lst[1:]
+lst = []
+n=int(input())
+for i in range(n):
+    lst.append(int(input()))
+num = int(input())
+print(next_in_line(lst , num ))
+
+2)
+def get_budgets(d):
+    s=0
+    for key,value in d.items():
+        s+=d[key]['budget']
+    return s
+
+
+d = dict(emp1 = {'name': 'vivek', 'age': 31 ,'budget':10000},
+         emp2 = {'name': 'akshay', 'age': 29 ,'budget':12000},
+         emp3 = {'name': 'mayur', 'age': 27 ,'budget':3000})
+get_budgets(d)
+
+3)
+def alphabet_soup(s):
+    s1 = sorted(s)
+    for i in s1:
+        print(i,end="")
+s=input()
+alphabet_soup(s)
+
+4)
+def compound_interest(p,r,t,n):
+    amount = p* pow( 1+(r/n),n*t)
+    print(round(amount , 2))
+p = float(input('Enter principal amount: '))
+r = float(input('Enter the interest rate: '))
+t = float(input('Enter time (in years): '))
+n = int(input('Enter the number of times that interest is compounded per year: '))
+r = r/100
+compound_interest(p , r , t ,n)
+
+5)
+class filter_list:
+    
+    def display(self , tmp):
+        for i in range(len(tmp)):
+            print(tmp[i] , end=" ")
+            
+    def fun(self , lst):
+        tmp=[]
+        for i in range(len(lst)):
+            if(lst[i].isdigit()):
+                tmp.append(int(lst[i]))
+        display(tmp)
+    
+    def __str__(self):
+        return "Class Created"
+    
+ob = filter_list()
+lst = []
+n = int(input("enter the length of list: "))
+for i in range(n):
+    lst.append(input())
+ob.fun(lst)

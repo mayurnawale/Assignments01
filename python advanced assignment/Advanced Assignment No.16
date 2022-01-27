@@ -1,0 +1,25 @@
+1)
+  Regular Expressions also known as “regex” or “regexp”. they are used to match strings of text such as particular characters, words, or patterns of characters.Regex is very useful in searching through large texts, emails and documents.Regex is also called “programming language for the string matching”.
+
+2)
+  The associative law of multiplication is written as(ab)c=a(bc).
+
+3)
+  re used as compile(),search(),findall(),sub() for search and replace, split(),etc...
+
+4)
+  character class metacharacters have special meaning.we must use a backslash when you we character class metacharacters as literals inside a character class.
+
+5)
+  We can combine a regular expression pattern into pattern objects, which can be used for pattern matching. It also helps to search a pattern again without rewriting it.
+
+6)
+  re.match() function of re in python will search the regular expression pattern and return the first occurrence.The Python RegEx match method checks for a match only at the beginning of the string. So,if a match is found in the first line,it returns the match object.if a match is found in some other line,the python RegEx match function returns null.
+  re.search() function will search the regular expression pattern and return the first occurrence.Unlike Python re.match(),it will check all lines of the input string.The Python re.search() function returns a match object when the pattern is found and “null” if the pattern is not found.
+  
+ 
+7)
+  The vertical bar symbol acts as an OR operator and matches the values to the left and right of the vertical bar.Square brackets([ ])designate a character class and match a single character in the string.
+
+8)
+  Because regular expressions are frequently static strings, which are conveniently represented as string literals. And from the different string literal notations available, raw strings are a convenient choice, when the regular expression includes a backslash character.

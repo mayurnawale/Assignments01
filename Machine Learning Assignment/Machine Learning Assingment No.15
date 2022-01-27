@@ -1,0 +1,136 @@
+1)
+i)Supervised Learning:
+Supervised learning is a category in which we feed labeled data as input to the machine learning model.this learning proccess is simple as compare to the other.accuracy of this proccess is very high as compare to the other. 
+
+ii)Semisupervised Learning:
+Semi supervised learning is a category of machine learning in which we have input data and only some of those input data are labeled as the output.depends on the supervised or unsupervised,we can decide this process is simple or complex.accuracy of this process is less.
+
+iii)Unsupervised Learning:
+Unsupervised learning is a category of machine learning in which we only have the input data to feed to the model but not corresponding output data.this process is complex as compare to the other process.accuracy of this process is less.
+
+2)
+Example of classification problem:
+i)Logistic regression
+Logistic regression ia a machine learning algorithm which is used for the classification problem,it is a predictive analysis algorithm and based on the concept probability.
+ii)Decision tree
+Decisison tree is a type of supervised machine learning process where the data is continuously split according to a certain parameter.
+iii)Random forest
+Random forest is a supervised machine learning process algorithm that is used widely in classification and regression problem.it builds decision tree on different samples and takes their majority vote for classification and average in case of regression.
+iv)Voting classifier
+Voting classifier is a machine learning model that trains on an ensemble of numerous models and predicts and output based on their highest probability of choosen class as output.
+v)Light GBM
+It is a gradient boosting framework that uses tree based learning algorithm.
+
+3)
+i)data acquisition and segmentation=
+Data acquisition is the process of sampling signals that measure real world physical conditions and converting the resulting samples into digital numeric values that can be manipulated by a computer.
+Segmentation means to divide the marketplace into parts,segments which are definable, accessible, actionable, and profitable and have a growth potential.segmentation allows a seller to closely tailor his product to the needs, desires, uses and paying ability of customers.
+ii)data preprocessing=
+Data preprocessing is the process of transforming raw data into an understandable format. it is also an important step in data mining as we cannot work with raw data.the quality of the data should be checked before applying machine learning or data mining algorithms.
+iii)feature extraction/dimension reduction=
+Feature extraction involves reducing the number of resources required to describe a large set of data.feature extraction is a general term for methods of constructing combinations of the variables to get around these problems while still describing the data with sufficient accuracy.
+iv)recognition and classification=
+Pattern recognition is the “automated discovery of patterns in a training set”, and so it is a general term for machine learning.
+Classification is the supervised learning problem whose target value is a finite set of classes.
+  
+4)
+Support Vector Machine (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges.however it is mostly used in classification problems.in the SVM algorithm, we plot each data item as a point in n-dimensional space with the value of each feature being the value of a particular coordinate.then we perform classification by finding the hyper-plane that differentiates the two classes.
+    
+5)
+-Benefits of SVM:
+SVM works relatively well when there is a clear margin of separation between classes.
+SVM is more effective in high dimensional spaces.
+SVM is effective in cases where the number of dimensions is greater than the number of samples.
+SVM is relatively memory efficient.
+
+-Drawbacks of SVM:
+SVM algorithm is not suitable for large data set.
+SVM not perform well when data set has more noise i.e classes are overlapping.
+in case where the number of features for each data point exceeds the number of training data samples the will underperform.
+    
+6)
+-KNN model in depth:
+the abbreviation KNN stands for K nearest neighbour,it is supervised machine learning algorithm.
+KNN is a simplest machine learning algorithm to understand and also to explain.It is usefull for both classification and regression.
+KNN algorithm use data and classify new data points on similarly measures the data is aligned to the class which has the nearest neighbours.
+
+7)
+The error rate at K=1 is always zero for the training sample. This is because the closest point to any training data point is itself.
+Validations errors are errors when users do not respond to mandatory questions.a validation error occurs when you have validation checking turned on for one of the questions and the respondent fails to answer the question correctly.
+
+8)
+Training data is the initial dataset use to teach a machine learning application to recognize patterns or perform as per required criteria, while testing data is used to evaluate model's accuracy.
+
+9)
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import load_iris
+irisData = load_iris()
+X = irisData.data
+y = irisData.target
+X_train, X_test, y_train, y_test = train_test_split(
+             X, y, test_size = 0.2, random_state=42)
+knn = KNeighborsClassifier(n_neighbors=7)
+knn.fit(X_train, y_train)
+print(knn.predict(X_test))
+
+10)
+Decision tree are a type of supervised machine learning where the data is continuously split according to a certain parameter.It is a decision support tool that uses a tree like model of decisions and their possible consequences.
+there are three types of nodes:
+i)chance nodes:Chance nodes is represented by a circle and shows the probability of a certain result.
+ii)decision nodes:Decision nodes is represented by a square and shows a decision to be made.
+iii)end nodes:End nodes is represented by a triangle and it shows the final outcome of the decision path.
+
+11)
+The steps in decision tree analysis consist of:
+-Define the problem area for which decision making is necessary.
+-Draw a decision tree with all possible solutions and their consequences.
+-Input relevant variables with their respective probability values.
+-Determine and allocate payoffs for each possible outcome.
+
+12)
+-Decision tree algorithm belongs to the family of supervised learning algorithm.
+-The goal of using a decision tree is to create a training model that can use to predict the class or value of the target variable by learning simple decision rules inferred from prior data.
+-Decision tree algorithm can be used for solving regression and classification problem.
+-In decision tree for predicting a class label for a record we start from the root of the tree.we compare the values of the root attributes with the record's attributes.
+
+13)
+Inductive bias of a learning algorithm is the set of assumptions that the learner uses to predict outputs of the given input that it has not encountered.the kind of necessary assumptions about the nature of the target function are subsumed in the phrase inductive bias.
+By using cross validation,train with more data,remove features,early stopping,regularization,ensembling we can stop the overfitting.
+    
+14)
+-advantages of decision tree:
+-required less effort for data preparation during pre processing as compare to the other algorithm.
+-does not required normalization of data.
+-also it does not required scaling of data.
+-missing value do not affect the process of buliding a decision tree to any considerable extent.
+-decision tree is very intuitive and easy to explain to technical terms as well as stakeholders.
+
+-disadvantage of decision tree:
+-small change in data can cause a large change in structure of decision tree.
+-sometimes calculations can go more complex as compare to other algorithm.
+-decision tree often involves higher time to train the model.
+-training is relatively expensive and take a more time.
+    
+15)
+-Problem suitable for decision tree learning:
+-instances are represented by attribute value pairs.
+-the target function has discrete output values.
+-disjunctive descriptions may be required.
+-the training data may contain errors.
+-the training data may contain missing attributes values
+
+16)
+-Random forest is a classification algorithm consisting of many decisions trees.
+-It uses bagging and feature randomness when building each individual tree to try to create an uncorrelated forest of trees whose prediction by committee is more accurate than that of any individual tree.
+-It divides this dataset into subset.these subsets are given to every decision tree in the random forest system.each decision tree produces its specific output.
+
+-the fundamental difference is that in random forest only a subset of features are selected at random out of the total and the best split feature from the subset is used to split each node in a tree,unlike in bagging where all features are considered for splitting a node.
+
+17)
+i)OOB error:
+-OOB error means out of bag error,is the average error for each calculated using predictions from the trees that do not contain in their respective bootstrap sample.
+-it is a method of measuring the prediction error of random forest,boosted decision tree and other machine learning model utilizing bootstrap aggregating.
+    
+ii)Variable value:
+-Variable importance is determined by calculating the relative influence of each variable. -whether that variable was selected to split on during the tree building process and how much the squared error improved as a result.

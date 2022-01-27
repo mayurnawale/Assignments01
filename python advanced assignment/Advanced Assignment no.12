@@ -1,0 +1,30 @@
+﻿1)
+No it does not, Strings are immutable, which means you cannot change an existing string. 
+
+2)
+It does not, strings are immutable, despite the semantic gymnastics this article is performing. Strings are immutable on the Python side.
+
+3)
+There are 2 ways to index a character. Accessing characters by a positive index number and negative index number.
+
+4)
+indexing- used as a resource to obtain individual elements and slicing is used to obtain a sequence of those elements.
+
+5)
+Integer(non-negative) is the indexed character’s data type.
+
+
+Integer is the data form for a slicing generated substring
+
+6)
+Collection of characters in sequence forms a string And Strings are used with single or double quotes.
+
+7)
+ + operator and * operator that allow to combine.
+ join() method is used to create a larger string
+
+8)
+It helps to identify any exception if a substring is not found
+
+9)
+There are two operators in operator  and not in operator that produce true and false results

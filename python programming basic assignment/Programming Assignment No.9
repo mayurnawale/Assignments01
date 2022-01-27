@@ -1,0 +1,102 @@
+1)
+num = int(input())
+rem = s = 0;    
+len = len(str(num))
+n = num;    
+while(num > 0):    
+    rem = num%10;    
+    s += int(rem**len);    
+    num = num//10;    
+    len -= 1;    
+if(s == n):    
+    print( "disarium number")
+else:    
+    print(" not a disarium number")
+
+2)
+def Length(n):    
+    length = 0;    
+    while(n != 0):     
+        length = length + 1;    
+        n = n//10;    
+    return length;    
+def sumdigit(num):    
+    rem = sum = 0;    
+    len = Length(num);
+        
+    while(num > 0):    
+        rem = num%10;   
+        sum = sum + (rem**len);    
+        num = num//10;    
+        len = len - 1;    
+    return sum;    
+result = 0;    
+print("Disarium numbers between 1 and 100 are");    
+for i in range(1, 101): 
+    result = sumdigit(i);    
+        
+    if(result == i):    
+        print(i)
+
+3)
+def HappyNumber(num):    
+    rem = sum = 0;    
+    while(num > 0):    
+        rem = num%10;    
+        sum = sum + (rem*rem);    
+        num = num//10;    
+    return sum;            
+num = 44;    
+result = num;    
+     
+while(result != 1 and result != 4):    
+    result = HappyNumber(result);    
+if(result == 1):    
+    print(str(num) + " is a happy number")
+elif(result == 4):    )
+    print(str(num) + " is not a happy number")
+
+4)
+def HappyNumber(num):    
+    rem = sum = 0;
+    while(num > 0):    
+        rem = num%10;    
+        sum = sum + (rem*rem);    
+        num = num//10;    
+    return sum; 
+print("List of happy numbers between 1 and 100: ");    
+for i in range(1, 101):    
+    result = i;
+    while(result != 1 and result != 4):    
+        result = HappyNumber(result);    
+    if(result == 1):    
+        print(i),    
+        print(" ")
+        
+5)
+num = 54;    
+rem = sum = 0;    
+n = num;    
+while(num > 0):    
+    rem = num%10;    
+    sum = sum + rem;    
+    num = num//10;        
+if(n%sum == 0):    
+    print(str(n) + " is a harshad number") 
+else:    
+    print(str(n) + " is not a harshad number")
+    
+6)
+def isPronicNumber(num):    
+    flag = False;    
+        
+    for j in range(1, num+1):
+        if((j*(j+1)) == num):    
+            flag = True;    
+            break;    
+    return flag;       
+print("Pronic numbers between 1 and 100: ")    
+for i in range(1, 101):    
+    if(isPronicNumber(i)):    
+        print(i),    
+        print(" ")

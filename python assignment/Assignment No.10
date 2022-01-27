@@ -1,0 +1,31 @@
+1)
+  shutil.copy() will copy a single file whereas shutil.copytree() will copy an entire folder and every folder and file within in it.
+  
+2)
+  bacon.txt file to new_bacon.txt
+  
+3)
+  send2trash send folders and files to our computer’s trash or recycle bin instead of completely deleting them, and shutil module has functions to get copy, move, rename, and delete files in our Python programs.
+  
+4)
+  To create own compressed ZIP files,first open the ZipFile object in write mode by passing 'w' as the second argument.This code will create a new ZIP file named new. zip that has the compressed contents of spam.
+  
+5)
+import os, shutil
+
+def selectiveCopy(folder, extensions, destFolder):
+        folder = os.path.abspath(folder)
+        destFolder = os.path.abspath(destFolder)
+        print('Looking in', folder, 'for files with extensions of', ', '.join(extensions))
+        for foldername, subfolders, filenames in os.walk(folder):
+                for filename in filenames:
+                        name, extension = os.path.splitext(filename)
+                        if extension in extensions:
+                                fileAbsPath = foldername + os.path.sep + filename
+                                print('Coping', fileAbsPath, 'to', destFolder)
+                                shutil.copy(fileAbsPath, destFolder)
+
+extensions = ['.php', '.py']
+folder = 'randomFolder'
+destFolder = 'selectiveFolder'
+selectiveCopy(folder, extensions, destFolder)

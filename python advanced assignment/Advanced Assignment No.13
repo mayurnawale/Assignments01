@@ -1,0 +1,29 @@
+﻿1)
+Yes, there are no repercussions as long as it is in sequence
+
+2)
+You can use an array or use a list slice command.
+a = [1]*1000
+ 
+3)
+by using l[::n]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+L[1:::2]
+Starting from one it will slice every 2nd odd number.
+
+4)
+indexing- used as a resource to obtain individual elements and slicing is used to obtain a sequence of those elements.
+
+5)
+Python will generate an error and simply return an empty sequence.
+
+6)
+Create a mutable list type with indexing that can be later reassigned new value. List indexing: We use the index number of a list item to modify the value associated with that item. If you want to replace one value in a list, the indexing syntax is most appropriate. To replace multiple items in a list that meet a criterion, using list comprehension is a good solution. 
+
+7)
+A matrix is unbalanced if all cells in the matrix are unbalanced and a cell of the matrix is unbalanced if the number of cells in that matrix that are adjacent to that cell is strictly lesser than the value written in this cell. 
+Adjacent cell means cells in the top, down, left, and right cell of each cell if it exists. 
+
+8)
+It helps to build the code more readable and help understand how it works. 
+List comprehension is fast effective and requires much less effort.

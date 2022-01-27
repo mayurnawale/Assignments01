@@ -1,0 +1,106 @@
+1)
+import logging as lg
+lg.basicConfig(filename='error.log' , level=lg.INFO)
+class Divisibility:
+    try:
+        def checkDivisibility(self,n):
+            for i in range(n):
+                if(i%7==0 and i%5==0):
+                    yield i
+    except Exception as e:
+        lg.info(e)
+
+try:
+    ob = Divisibility()
+    n = int(input())
+    for i in ob.checkDivisibility(n):
+        print(i , end=" ")
+except Exception as e:
+        lg.info(e)
+        
+2)
+import logging as lg
+lg.basicConfig(filename='error.log' , level=lg.INFO)
+class EvenNum:
+    try:
+        def CheckDiv(self,n):
+            for i in range(n):
+                if(i%2==0):
+                    yield i
+    except Exception as e:
+        lg.info(e)
+
+try:
+    obj = EvenNum()
+    n = int(input())
+    for i in obj.CheckDiv(n):
+        print(i, end=" ")
+except Exception as e:
+        lg.info(e)
+        
+3)
+import logging as lg
+lg.basicConfig(filename='error.log' , level=lg.INFO)
+class Fibonacci:
+    try:
+        def Fib(self,n):
+            mylist=[0,1]  
+            [mylist.append(mylist[-2]+mylist[-1]) for n in range(n-1)]
+            print(mylist) 
+    except Exception as e:
+        lg.info(e)
+
+try:
+    obj = Fibonacci()
+    n = int(input())
+    obj.Fib(n)
+except Exception as e:
+        lg.info(e)
+        
+4)
+import logging as lg
+lg.basicConfig(filename='error.log' , level=lg.INFO)
+class CheckEmail:
+    try:
+        def Username(self,n):
+            for i in n:
+                if i=='@':
+                    break
+                print(i,end="")
+                
+            
+    except Exception as e:
+        lg.info(e)
+
+try:
+    obj = CheckEmail()
+    mystring = input()
+    obj.Username(mystring)
+except Exception as e:
+        lg.info(e)
+        
+5)
+import logging as log
+lg.basicConfig(filename='error.log' , level=log.INFO)
+class Shape:
+    def area(self):
+        print("Shape area Function")
+    def __str__(self):
+        return "Shape Class"
+
+class Square(Shape):
+    def __init__(self,length):
+        self.length=length
+        
+    def area(self):
+        print("Area of square: ",self.length*self.length)
+        
+    def __str__(self):
+        return "Square Class"
+
+try:
+    length = int(input())
+    obj = Square(length)
+    obj.area()
+except Exception as e:
+        lg.info(e)

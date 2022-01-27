@@ -1,0 +1,47 @@
+1)
+A linear equation in two variables can be described as a linear relationship between x and y, that is two variables in which the value of one of them (usually y) depends on the value of the other one (usually x).in this case, x is the independent variable and y depends on it, so y is called the dependent variable.
+
+2)
+Simple linear regression is used to estimate the relationship between two quantitative variables.You can use simple linear regression when you want to know: How strong the relationship is between two variables e.g. the relationship between rainfall and soil erosion.
+
+3)
+The slope of a regression line (b)represents the rate of change in y as x changes. Because y is dependent on x, the slope describes the predicted values of y given x.the slope of a regression line is used with a t-statistic to test the significance of a linear relationship between x and y.
+
+4)
+The graph's slope of the (3,2) and (2,2) is 0.because it creates a horizontal straight line.
+
+5)
+In summary,if the slope is positive,y increases as x increases and the function runs "uphill" (going left to right).
+
+6)
+If the slope is negative,y decreases as x increases and the function runs downhill.If the slope is zero, y does not change, thus is constant—a horizontal line.
+
+7)
+Multiple linear regression refers to a statistical technique that uses two or more independent variables to predict the outcome of a dependent variable.the technique enables analysts to determine the variation of the model and the relative contribution of each independent variable in the total variance.
+
+8)
+the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is,the average squared difference between the estimated values and the actual value.
+
+9)
+The total sum of squares is a variation of the values of a dependent variable from the sample mean of the dependent variable.essentially, the total sum of squares quantifies the total variation in a sample.
+
+10)
+Multicollinearity occurs when two or more independent variables are highly correlated with one another in a regression model.this means that an independent variable can be predicted from another independent variable in a regression model.
+
+11)
+In statistics,heteroskedasticity happens when the standard deviations of a predicted variable, monitored over different values of an independent variable or as related to prior time periods are non-constant With heteroskedasticity, the tell-tale sign upon visual inspection of the residual errors is that they will tend to fan out over time.
+
+12)
+Ridge Regression is a technique for analyzing multiple regression data that suffer from multicollinearity.by adding a degree of bias to the regression estimates, ridge regression reduces the standard errors.it is hoped that the net effect will be to give estimates that are more reliable.
+
+13)
+Lasso regression is a type of linear regression that uses shrinkage.shrinkage is where data values are shrunk towards a central point, like the mean.the lasso procedure encourages simple, sparse models i.e. models with fewer parameters.the acronym “LASSO” stands for Least Absolute Shrinkage and Selection Operator.
+
+14)
+polynomial regression is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y is modelled as an nth degree polynomial in x.
+
+15)
+a basis function is an element of a particular basis for a function space. Every function in the function space can be represented as a linear combination of basis functions,just as every vector in a vector space can be represented as a linear combination of basis vectors.
+
+16)
+Logistic Regression is a “Supervised machine learning” algorithm that can be used to model the probability of a certain class or event.it is used when the data is linearly separable and the outcome is binary or dichotomous in nature that means Logistic regression is usually used for Binary classification problems.

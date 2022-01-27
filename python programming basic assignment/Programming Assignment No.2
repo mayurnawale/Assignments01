@@ -1,0 +1,44 @@
+1)
+kilometers = float(input("Enter value in kilometers: "))
+conv_fac = 0.621371
+# 1kms=0.621371miles
+miles = kilometers * conv_fac
+print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
+
+2)
+celsius = 44
+fahrenheit = (celsius * 1.8) + 32
+print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))
+
+3)
+import calendar  
+yy = int(input("Enter year: "))
+mm = int(input("Enter month: "))
+print(calendar.month(yy, mm))
+
+4)
+import calendar
+yy = 2014
+mm = 11    
+print(calendar.month(yy, mm))
+
+5)
+import cmath
+a = 1
+b = 5
+c = 6
+d = (b**2) - (4*a*c)
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+print('The solution are {0} and {1}'.format(sol1,sol2))
+
+6)
+x = 5
+y = 7
+ 
+print ("Before swapping: ")
+print("Value of x : ", x, " and y : ", y) 
+x, y = y, x
+ 
+print ("After swapping: ")
+print("Value of x : ", x, " and y : ", y)

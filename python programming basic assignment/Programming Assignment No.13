@@ -1,0 +1,62 @@
+1)
+import math
+c=50
+h=30
+d = input("Enter comma seperated value: ")
+mylist = d.split(",")
+for i in mylist:
+    myd = int(i)
+    result = math.sqrt((2*c*myd)/h)
+    print(int(res) , end=" ")
+    
+2)
+row = int(input("Enter Row: "))
+column = int(input("Enter Column: "))
+for i in range(row):
+    for j in range(column):
+        print(i*j , end=" ")
+    print()
+    
+3)
+word = input("Enter comma seperated string: ")
+mylist =  word.split(",")
+mylist.sort()
+for i in mylist:
+    print(i,end=" ")
+    
+4)
+word = input("Enter space seperated string: ")
+mylist =  word.split(" ")
+final_list = list(set(mylist))
+final_list.sort()
+for i in final_list:
+    print(i,end=" ")
+    
+5)
+word = input("Enter space seperated string: ")
+letter=0
+digit = 0
+for i in range(len(word)):
+    if(word[i].isalpha()):
+        letter+=1
+    elif(word[i].isdigit()):
+        digit+=1
+print("Letter:{}\nDigit:{}".format(letter,digit))
+
+6)
+word = input("enter comma seperated password: ")
+myList = word.split(",")
+for i in range(len(myList)):
+        l, u, s, d = 0, 0, 0, 0
+        if(len(myList[i])>=6 and len(myList[i])<=12):
+            for j in myList[i]:            
+                if(j.islower()):
+                    l+=1
+                if (j.isupper()):
+                    u+=1            
+                if (j.isdigit()):
+                    d+=1            
+                if(j=='@'or j=='$' or j=='_'):
+                    s+=1    
+            if(l>=1 and u>=1 and d>=1 and s>=1):
+                print(myList[i])

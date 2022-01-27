@@ -1,0 +1,82 @@
+1)
+import logging as log
+log.basicConfig(filename='error.log' , level=log.INFO)
+def shutters(mystr):
+    try:
+        if(len(mystr)>2):
+            print(mystr[0]+mystr[1]+"..."+" "+mystr[0]+mystr[1]+"..."+" "+mystr+"?")
+        else:
+            print("String Length is less than 2")
+    except Exception as e:
+        log.info(e)
+try:
+    mystr = input()
+    shutters(mystr)
+except Exception as e:
+    log.info(e)
+    
+2)
+import logging as log
+log.basicConfig(filename='error.log' , level=log.INFO)
+def radians_to_degrees(n):
+    try:
+        result = round(1*(180*7)/22,2)
+        return result
+    except Exception as e:
+        log.info(e)
+try:
+    n = int(input())
+    print(radians_to_degrees(n))
+except Exception as e:
+    log.info(e)
+    
+3)
+import logging as log
+log.basicConfig(filename='error.log' , level=log.INFO)
+def is_curzon(n):
+    try:
+        a = ((2**n)+1)
+        b = ((2*n)+1)
+        if(a%b==0):
+            return True
+        else:
+            return False
+    except Exception as e:
+        log.info(e)
+try:
+    n = int(input())
+    print(is_curzon(n))
+except Exception as e:
+    log.info(e)
+    
+4)
+import math
+import logging as log
+log.basicConfig(filename='error.log' , level=log.INFO)
+def FindareaHexagon(n):
+    try:
+        areaHexa = ((3*math.sqrt(3))/2)*n*n
+        return(round(areaHexa,2))
+    except Exception as e:
+        log.info(e)
+try:
+    n = int(input())
+    print(FindareaHexagon(n))
+except Exception as e:
+    log.info(e)
+    
+5)
+import logging as log
+log.basicConfig(filename='error.log' , level=log.INFO)
+def DecimalToBinary(num):
+    try:
+        if num >= 1:
+            DecimalToBinary(num // 2)
+        print(num % 2, end = '')
+    except Exception as e:
+        log.info(e)
+try:
+    n = int(input())
+    print(DecimalToBinary(n))
+except Exception as e:
+    log.info(e)

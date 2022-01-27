@@ -1,0 +1,75 @@
+1)
+Steps for graphing an equation using the slope and y-intercept:
+-Find the y-intercept = b of the equation y = mx + b.
+-Plot the y-intercept,the point will be (0, b).
+-Find the slope=m of the equation y = mx + b.
+-Make a single step using the rise and run from the slope.
+-Connect those two points with your line.
+
+Simple linear regression is a regression model that estimates the relationship between one independent variable and one dependent variable using a straight line.both variables should be quantitative.
+
+2)
+identify slope from a graph,using two of the points on the line we can find the slope of the line by finding the rise and the run.the vertical change between two points is called the rise and the horizontal change is called the run.the slope equals the rise divided by the run.
+Slope =riserun Slope = rise run.
+
+3)
+slope=
+Pick two points on the line and determine their coordinates. Determine the difference in y-coordinates of these two points (rise).determine the difference in x-coordinates for these two points (run).divide the difference in y-coordinates by the difference in x-coordinates (rise/run or slope).
+linear positive slopee=
+the line moves upward when going from left to right.
+linear negative slope=
+the line moves down when going from left to right.
+
+conditions that contribute to the slope=
+-properties of soil or rock mass. 
+-slope geometry.
+-groundwater conditions.
+-alternation of materials by faulting. 
+-joint or discontinuity systems.
+-movements and tension in joints.
+-earthquake activity.
+
+4)
+If the line is sloping up to the right,the slope is positive(+).if the line is sloping down to the right,the slope is negative (-).
+
+5)
+To find the maximum or minimum of a curve you must first differentiate the function and then equate it to zero.this gives you one coordinate.to find the other you must resubstitute the one already found into the original function.
+
+6)
+A linear regression line has an equation of the form Y = a + bX,where X is the explanatory variable and Y is the dependent variable.the slope of the line is b and a is the intercept (the value of y when x = 0).
+
+7)
+ordinary least squares (OLS) is a type of linear least squares method for estimating the unknown parameters in a linear regression model.OLS chooses the parameters of a linear function of a set of explanatory variables by the principle of least squares: minimizing the sum of the squares of the differences between the observed dependent variable (values of the variable being observed) in the given dataset and those predicted by the linear function of the independent variable.
+
+8)
+The standard error of the regression (S) also known as the standard error of the estimate.it represents the average distance that the observed values fall from the regression line.conveniently it tells how wrong the regression model is on average using the units of the response variable.
+
+9)
+if a company's sales have increased steadily every month for the past few years, by conducting a linear analysis on the sales data with monthly sales, the company could forecast sales in future months.
+
+10)
+There are four assumptions associated with a linear regression model: Linearity: The relationship between X and the mean of Y is linear. Homoscedasticity: The variance of residual is the same for any value of X. Independence: Observations are independent of each other.
+The Sustainable Blue Economy Finance Principles are the foundational keystone to invest in the ocean economy.they promote the implementation of SDG 14 Life Below Water and set out ocean-specific standards,allowing the financial industry to mainstream sustainability of ocean-based sectors.
+
+11)
+It involves very lengthy and complicated procedure of calculations and analysis.it cannot be used in case of qualitative phenomenon viz. honesty, crime etc.also it has Non-Linearity of the response-predictor relationships.a non-constant variance of the error term [Heteroscedasticity].it is Collinearity.
+
+12)
+Train each model in the different folds, and predict on the splitted training data.setup a simple machine learning algorithm, such as linear regression.use the trained weights from each model as a feature for the linear regression.use the original train data set target as the target for the linear regression.
+
+13)
+In statistics polynomial regression is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y is modelled as an nth degree polynomial in x.for this reason,polynomial regression is considered to be a special case of multiple linear regression.
+example=to predict the spread rate of COVID-19 and other infectious diseases.
+
+14)
+Logistic regression is a statistical analysis method used to predict a data value based on prior observations of a data set.based on historical data about earlier outcomes involving the same input criteria,it then scores new cases on their probability of falling into a particular outcome category.
+
+15)
+Assumptions of logistic regression=
+-independence of errors
+-linearity in the logit for continuous variables
+-absence of multicollinearity
+-lack of strongly influential outliers.
+
+16)
+maximum likelihood estimation is a mathod of estimating the parameters of an assumed probability distribution,given some observed data.this is achieved by maximizing a likelihood function so that under the assumed statistical model,the observed data is most probable.

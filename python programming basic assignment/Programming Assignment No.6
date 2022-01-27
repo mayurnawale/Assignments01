@@ -1,0 +1,49 @@
+1)
+def recursion(n):
+   if n <= 1:
+       return n
+   else:
+       return(recursion(n-1) + recursion(n-2))
+
+nterms = 15
+if nterms <= 0:
+   print("Plese enter a positive integer")
+else:
+   print("Fibonacci sequence:")
+   for i in range(nterms):
+       print(recursion(i))
+
+2)
+def recursion_factorial(n):
+   if n == 1:
+       return n
+   else:
+       return n*recursion_factorial(n-1)
+
+num = 7
+if num < 0:
+   print("factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   print("The factorial of", num, "is", recursion_factorial(num))
+
+3)
+height = float(input("Input your height in feet: "))
+weight = float(input("Input your weight in Kilogram: "))
+print("Your body mass index is: ", round(weight / (height * height), 2))
+
+4)
+import math
+print ("Natural logarithm of 14 is : ", end="")
+print (math.log(14))
+
+5)
+def sumOfSeries(n):
+    sum = 0
+    for i in range(1, n+1):
+        sum +=i*i*i
+          
+    return sum
+n = 5
+print(sumOfSeries(n))

@@ -1,0 +1,95 @@
+1)
+total = 0
+list1 = [11, 22 ,33, 44, 55]
+for ele in range(0, len(list1)):
+    total = total + list1[ele]
+print("Sum of all elements in given list: ", total)
+
+2)
+import numpy
+list1 = [5,10,15]
+result1 = numpy.prod(list1)
+print(result1)
+
+3)
+list = [5,10,15,20,25,30]
+list.sort()
+print('smallest number is:' , *list[:1])
+
+4)
+list1 = [10,15,20,25,30]
+list1.sort()
+print('largest number is:' , max(list1))
+
+5)
+list1 = [25,35,45,55,95] 
+mx=max(list1[0],list1[1])
+secondmax=min(list1[0],list1[1])
+n =len(list1)
+for i in range(2,n):
+    if list1[i]>mx:
+        secondmax=mx
+        mx=list1[i]
+    elif list1[i]>secondmax and \
+        mx != list1[i]:
+        secondmax=list1[i]
+ 
+print("Second highest number is : ",\
+      str(secondmax))
+      
+6)
+def N_maxelements(list1, N):
+    final_list = []
+  
+    for i in range(0, N): 
+        max1 = 0
+          
+        for j in range(len(list1)):     
+            if list1[j] > max1:
+                max1 = list1[j];
+                  
+        list1.remove(max1);
+        final_list.append(max1)
+          
+    print(final_list)
+list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+N = 2
+N_maxelements(list1, N)
+
+7)
+list1 = [2,3,4,5,6,7,8,9]
+for num in list1:
+     if num % 2 == 0:
+        print(num, end=" ")
+        
+8)
+list1 = [2,3,4,5,6,7,8,9]
+for num in list1:
+     if num % 2 == 1:
+        print(num, end=" ")
+        
+9)
+myList = [1, [], 2, 3, [], 4, 5, [], [], 9]
+print("The original list is : " + str(myList))
+result = list(filter(None, myList))
+print ("List after empty list removal : " + str(result))
+
+10)
+def Cloning(li1):
+    li_copy = li1[:]
+    return li_copy
+li1 = [10,00,30,40,50]
+li2 = Cloning(li1)
+print("Original List:", li1)
+print("After Cloning:", li2)
+
+11)
+def countX(lst, x):
+    count = 0
+    for ele in lst:
+        if (ele == x):
+            count = count + 1
+    return count
+lst = [4, 6, 4, 10, 4, 20, 10, 4, 4,25]
+x = 4
+print('{} has occurred {} times'.format(x, countX(lst, x)))

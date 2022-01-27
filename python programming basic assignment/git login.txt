@@ -1,0 +1,10 @@
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Avnish327030/18th_full_stack.git
+git status
+git log
+git branch
+git push origin main
+git push https://token key@github.com/username/reponame.git

@@ -1,0 +1,68 @@
+1)
+myStr =  input('Enter the string : ')
+k = int(input('Enter k  (value for accepting string) : '))
+largerStrings = []
+words = myStr.split(" ")
+for word in words:
+        if len(word) > k:
+                largerStrings.append(word)
+print("All words which are greater than given length ", k, "are ", largerStrings)
+
+2)
+def remove_char(s, i):
+    a = s[ : i]
+    b = s[i + 1: ]
+    return a+b
+string = "alliswell"
+i = 4
+print(remove_char(string,i-1))
+
+3)
+str1=input("Enter first String   :: ")
+str2=input("Enter second String  :: ")
+str=str2.join(str1)    
+print(" after joining the string ::>",str)
+
+4)
+stringA = '01101010101'
+b = {'0','1'}
+t = set(stringA)
+if b == t or t == {'0'} or t == {'1'}:
+    print("StringA is a binary string.")
+else:
+    print("StringA is not a binary string.")
+stringB = '0120101010'
+u = set(stringB)
+if b == u or u == {'0'} or u == {'1'}:
+    print("StringB is a binary string.")
+else:
+    print("StringB is not a binary string.")
+    
+5)
+def uncommon_words(s1, s2):
+    count = {}
+    for word in s1.split():
+        count[word] = count.get(word, 0) + 1
+    for word in s2.split():
+        count[word] = count.get(word, 0) + 1
+    return [word for word in count if count[word] == 1]
+s1="work hard"
+s2="work hard to fulfill your desires"
+print(uncommon_words(s1, s2))
+
+6)
+string = "same to same"
+duplicates = []
+for char in string:
+   if string.count(char) > 1:
+     if char not in duplicates:
+        duplicates.append(char)
+print(*duplicates)
+
+7)
+import re
+string = input('Enter any string: ')
+if(bool(re.match('^[a-zA-Z0-9]*$', string)) == True):
+    print('String does not contain any special characters.')
+else:
+    print('The string contains special characters.')

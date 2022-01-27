@@ -1,0 +1,41 @@
+1)
+def equal(a,b,c):
+    if a==b==c:
+        return 3
+    elif a==b or a==c:
+        return 2
+    else:
+        return 0
+#now we can check the examples.
+        
+2)
+def dict_to_list(d):
+    return sorted(list(d.items()))
+#now we can check the examples.
+
+3)
+def mapping(l):
+    return {i.lower():i.upper() for i in l}
+#now we can check the examples.
+
+4)
+def vow_replace(string, spl):
+    rep = []
+    vowels = 'aeiouAEIOU'
+    for i in range(len(string)):
+        if string[i] in vowels:
+            rep.append(spl)
+        else:
+            rep.append(string[i])
+    return ''.join(rep)
+#now we can check the examples.
+
+5)
+def ascii_capitalize(string):
+    l = []
+    for i in range(len(string)):
+        if ord(string[i]) % 2 == 0:
+            l.append(string[i].upper())
+        else:
+            l.append(string[i].lower())
+    return "".join((l))

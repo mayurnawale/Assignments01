@@ -1,0 +1,60 @@
+1)
+def pentagonal(in_num):
+    output = 1
+    if in_num >=1:
+        for ele in range(in_num):
+            output = output + (5*ele)
+        print(f'pentagonal({in_num}) ➞ {output}')
+    else:
+        print("Enter a Positive Number as Input")
+pentagonal(1) 
+pentagonal(2)
+pentagonal(3)
+pentagonal(8)
+
+2)
+def encrypt(in_string):
+    vowels = {'a':'0','e':'1','i':'2','o':'2','u':'2'}
+    out_string = ''
+    for ele in in_string[::-1]:
+        if ele in vowels.keys():
+            out_string += vowels[ele]
+        else:
+            out_string += ele
+    out_string += "aca"
+    print(f'encrypt({in_string}) ➞ {out_string}')
+encrypt("banana")
+encrypt("karaca")
+encrypt("burak")
+encrypt("alpaca")
+
+3)
+import datetime
+def has_friday_13(month,year):
+    output = False
+    if datetime.datetime(year,month,13).strftime('%A') == 'Friday':
+        output = True
+    print(f'has_friday_13{month,year} ➞ {output}')
+has_friday_13(3, 2020)
+has_friday_13(10, 2017)
+has_friday_13(1, 1985)
+
+4)
+import re
+lst = ["bad cookie", "good cookie", "bad cookie", "good cookie", "good cookie"]
+pattern = r'(?<!good)\scookie'# Regex Negative lookbehind expression
+data = re.findall(pattern,' '.join(lst))
+print(f'No of Bad cookies produced per day ➞ {len(data)}')
+
+5)
+def pluralize(in_list):
+    out_set = set()
+    for ele in set(in_list):
+        if in_list.count(ele) > 1:
+            out_set.add(ele+'s')
+        else:
+            out_set.add(ele)
+    print(f'pluralize({in_list})  ➞ {out_set}')
+pluralize(["cow", "pig", "cow", "cow"])
+pluralize(["table", "table", "table"])
+pluralize(["chair", "pencil", "arm"])

@@ -1,0 +1,115 @@
+1)
+Target function essentially the formula that an algorithm feeds data to in order to calculate predictions.it is a method for solving a problem that an Al algorithm parses its training data to find.
+    
+2)
+Predictive models
+it is a statistical technique using machine learning and data mining to predict and forecast likely future outcomes with the aid of historical and existing data.
+it works by analyzing the current and historical data and projecting what it learns on a model generated to forecast likely outcomes.
+it is a analysis of historical data as well as exsting external data to finds patterns and behaviour.
+For example:
+-time series regression model for airline predictive airline traffic volume.
+-predicting fuel efficiency based on a linear regression model of engine speed versus load.
+
+Descriptive type models
+it describes a system or other entity and its relationship to its environment.it exploit past data that are stored in databases and provide you with the accurate report.this is due to the machine learning is all about a making prediction.on other hand statistics is all all about drawing conclusion from data which is nessary essential step.
+for example:-circuit design model that describes electrical components and their interconnections.
+
+3)
+method of assessing a classification model's efficency:
+-Accuracy-It is the percentage of correct prediction for the test data.it can calculate easily by dividing numbers of correct prediction by the number of total prediction.
+-Precision-It is the fraction of relavant examples among all of the examples which were predicted to belong in a certain class.
+-Recall-It is the fraction of examples which were predicted to belong to a class with respect to all of the example that truly belong in the class.
+    
+various measurement parameters:
+Sales,profit,return on investment,customer happiness,customer review,personal review,overall quality,reputation in marketplace this all parameter are to be consider.
+
+4)
+I]
+Underfitting refers to a model that can neither model training data nor generalize to new data.underfit machine learning model is not suitable model and will be obvious as it will have poor performance on the training data.
+It is scenario in data science where a data model is unable to capture the relationship between the input and output variable accurate and generate the high error rate.
+-Reasons for overfiting:
+-Data used is not cleaned and contains noise in it.
+-Model has a high  variance.
+-Size of the dataset is not enough.
+-model used is too complex.
+
+II]
+Overfitting happens when a model learns the detail and noise in the training data to the extent that is negatively impact the performance of the model on new data.this means that the noise or random fluctutations in the training data is picked up and learned as concepts by the model.
+example:it would be a big red flag  if our model saw 99% accuracy on the training set but had only 55% accuracy in test data set.
+when overfitting occures the validation matrix stop improving after a certain numbers of epochs and begins to decrease afterward.
+the training matrix continues to improve because the models seeks to find the best fit for the training data.
+
+III]
+When we modify the machine learning algorithm to better fit the a given data set,it will in turn lead to low bias but will increase the variance.this way the model will fit with the data set while increasing the chances of inaccurate prediction.
+bias variance tradeoff comes into the picture when we try to balance these two, accounting for the prediction error due to bias and variance help us build a model that performs well on training data as well as test data.
+
+5)
+It is possible to boost the efficieny of the learning model.
+it can only improve with the practice.
+we can boost it by using some techniques:add more data,feature engineering,feature selection,multiple algorithm,algorithm tunning,ensemble methods.
+
+6)
+In case of supervised learning, it is mostly done by measuring the performance metrics such as accuracy, precision, recall, AUC, etc. on the training set and the holdout sets.
+most common success indicators=
+i)clustering 
+ii)anomaly detection
+iii)neural networks
+iv)latent variable models
+
+7)
+The Linear Regression deals with continuous values whereas classification problems mandate discrete values.hence it is not possible.
+
+8)
+predictive modeling is a statistical technique using machine learning and data mining to predict and forecast likely future outcomes with the aid of historical and existing data.it works by analyzing current and historical data and projecting what it learns on a model generated to forecast likely outcomes.
+
+9)
+i)Model's error rate=
+                    =(FN+FP)/(P+N)
+                    =10/100
+                    =0.1
+
+ii)Kappa value=
+              =(Po-Pe)/(1-Pe)
+              =(-0.024/0.756)
+              =-0.03174
+less than 0 means no agreement.
+
+iii)Sensitivity=
+               =TP/(TP+FN)
+               =15/18
+               =0.83333
+               
+iv)Precision=
+            =TP/(TP+FP)
+            =15/90
+            =0.1666
+            
+v)F-measure=
+           =TP/(TP+(1/2)(FP+FN))
+           =15/54
+           =0.2777
+           
+10)
+I] The process of holding out
+Hold out is when you split up your dataset into a train and test set.the training set is what the model is trained on,and the test set used to see how well that model performs on unseen data.
+It is a process of spliting the data in different splitts and using one splits for training the model and other splits for validating and testing the models.
+
+II] Cross-validation by tenfold
+with this method we have one data set which we divide randomly into 10 parts.we use 9 of this parts for training and reserve one for the testing.we repeat this procedure for 10 times each time reserving a different tenth for testing.
+it is a technique to evaluate predictive models by partitioning the original sample into a training set to train the model and test set to evaluate it.
+
+III] Adjusting the parameters
+The data analysis computer program must change the parameter values to achieve a minimum value for the weighted sum of the squared residuals.
+
+11)
+I] Purity vs. Silhouette width
+-Purity is a measure of the extent to which clusters contain a single class.
+-the Silhouette width 
+
+II] Boosting vs. Bagging
+-Boosting is an ensemble meta algorithm for primarily reducing bias and also variance in supervised learning and family of machine learning algorithm that converts weak learners to strong ones.
+-Bagging is an ensemble learning method that is commonly used to variance within a noisy dataset.In this a random sample of data in a training set is selected with replacement.
+    
+III] The eager learner vs. the lazy learner
+-Eager learner is a learning method in which the tries to construct the general,input-independent target function during training of the system, as opposed to lazy learning where generalization beyond the training data is delayed until a quary is made to the system.
+-Lazy learner is a learning method in which generalization of the training data is in theory delayed untill a query is made to the system.as opposed to the eager learning where the system tries to generalize the training data before receiving theories.

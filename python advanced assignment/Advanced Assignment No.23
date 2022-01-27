@@ -1,0 +1,27 @@
+1)
+Matplotlib provides a convenient method called subplots for increasing the comparison between different figures on the same graph.subplots means a group of smaller axes that can exist together within a single figure.
+
+2)
+Compound interest makes a sum of money grow at a faster rate than simple interest,because in addition to earning returns on the money you invest you also earn returns on those returns at the end of every compounding period which could be daily,monthly,quarterly or annually.
+
+3)
+Histogram shows total values of X wrt Y which means at any particular position of X,Y value shows the total number of counts or data below that value of X.
+numpy.histogram() is the built in function used.
+
+4)
+We can use figure(figsize==(10,8)) function inside the matplot.pyplot library which we scale down or up the graph.
+
+5)
+in regular multiplication values of same index get multiplied.
+in dot product there is row wise multiplication,row of one array with column of second array and so on.
+in outer multiplication every element of first array a1 will be multiply by every element of other arrat a2 such the number of columns will be equal to the number of element in another array a2.
+
+6)
+np.pmt (rate,nper,pv) function we will be using in order to calculate monthly mortgage payment before you purchase a house.
+
+-rate=the periodic interest rate.
+-nper=the number of payment period.
+-pv=the total value of the mortgage loan.
+
+7)
+Yes,an array can store the string.the limitation which imposed on the string data is,whenever we store the data of string dtype then it should keep in mind that the string which is having the maximum length is the limit.

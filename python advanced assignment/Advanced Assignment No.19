@@ -1,0 +1,61 @@
+1)
+A class is a set of entities which are better known as instances. It is a one-to-one partnership
+# a and b are distinct instances of the list class/type
+# they contain the same sequence of integers
+>>> a = list((1, 2, 3))
+>>> b = list((1, 2, 3))
+>>> a is b
+False
+
+
+>>> isinstance(a, list)
+True
+
+
+>>> isinstance(b, list)
+True
+
+
+2)
+Classes and variables
+
+
+3)
+Class stores the data/values of objects.
+
+
+4)
+Both are called by name; Method is a piece of code and associated with an object, whereas regular function is not.
+
+
+5)
+Yes,its the ability of one class to replicate the properties from another class
+     __init__
+
+
+6)
+Encapsulation works on class variables by wrapping them and declaring them private.
+
+
+7)
+Class variable has the same value for all instances of the class and instance variable has different values for all instances of a class.
+
+
+8)
+when there is need to access the class, then class method helps to create instances of such class.
+
+
+9)
+when two objects have same method __add__ method is used and if not then __radd__  is used to check if values can be added.
+
+
+10)
+It is used to support concatenation and slicing for strings, lists and sequences by writing a recursive reverse function.
+
+
+11)
+Emulting numeric type
+
+
+12)
+Yes,to customize instance variable add double underscores before its name.

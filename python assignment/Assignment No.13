@@ -1,0 +1,24 @@
+1)
+  CSV file unable to perform operations on data whereas Excel can perform operations on the data.
+
+2)
+  To read a CSV file with the csv module, first open it using the open() function,just as any other text file.But instead of read() or readlines() method on the File object that open() returns,pass it to the csv.reader() function.
+  Firstly call open() and pass it 'w' to open a file in write mode.This will create the object you can then pass to csv.writer() to create a Writer object.
+
+3)
+  rb=open for reading in binary mode.
+  w=Open for writing.
+  wb=Open for writing in binary mode.
+
+4)
+  writerows()=this function takes a list of iterables as parameter and writes each item as a comma separated line of items in the file.
+
+5)
+  Delimiter= it is the character that appears between cells on a row. By default the delimiter for a CSV file is a comma.
+  line terminator= it is the character that comes at the end of a row. By default the line terminator is a newline.
+
+6)
+  loads() method return Python data structure of JSON string or data.
+
+7)
+  json.dumps()

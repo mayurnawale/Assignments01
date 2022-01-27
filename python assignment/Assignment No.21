@@ -1,0 +1,72 @@
+1)
+from datetime import date
+now = date.today()
+now_str = now.isoformat()
+with open('today', 'wt') as output:
+    print(now_str, file=output)
+    
+2)
+  with open('today' ,'rt') as input:
+  today_string = input.read()
+    
+   today_string
+  '2021-05-06'
+  
+3)
+fmt = '%Y-%m-%d\n'
+datetime.strpttime(time_string, fmt)
+    
+datetime.datetime(2021, 0, 5, 0, 6)
+
+4)
+import os
+os.listdir('.')
+
+['.conda',
+ '.ipynb_checkpoints',
+ '.ipython',
+ '.jupyter',
+ '.matplotlib',
+ '06 October 2021.txt',
+ '3D Objects',
+ 'anaconda3',
+ 'AppData',
+ 'Application Data']
+ 
+5)
+import os
+os.listdir('..')
+
+['Admin', 'All Users', 'Default', 'Default User', 'desktop.ini', 'Public']
+
+6)
+import multiprocessing
+def now(seconds):
+ from datetime import datetime
+ from time import sleep
+ sleep(seconds)
+ print('wait', seconds, 'seconds, time is', datetime.utcnow())
+if __name__ == '__main__':
+ import random
+ for n in range(3):
+ seconds = random.random()
+ proc = multiprocessing.Process(target=now, args=(seconds,))
+ proc.start()
+ 
+7)
+my_day = date(1995, 5, 29)
+my_day
+
+datetime.date(1995, 5, 29)
+
+8)
+my_day.weekday()
+0
+ my_day.isoweekday()
+ 1
+ 
+9)
+from datetime import timedelta
+party_day = my_bday + timedelta(days=10000)
+
+datetime.date(2022, 12, 30)

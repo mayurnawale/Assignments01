@@ -1,0 +1,46 @@
+1)
+It is not for show it actually adds and assigns the final value to the variable. It is same as the addition operator, there is negligible difference in runtime.
+
+2)
+x = ("a","b")
+print(x.replace("a","a+b")
+
+3)
+list1= [i for i in range(0,100)]
+   list1
+   
+4)
+x= (1,2,3)*99
+print(f"{x}", "")
+
+5)
+Multi-dimensional lists in Python=
+Approach 1: Accessing with the help of loop.
+Approach 2: Accessing using square brackets. ...
+append(): Adds an element at the end of the list. ...
+extend(): Add the elements of a list (or any iterable), to the end of the current list.
+reverse(): Reverses the order of the list.
+
+6)
+yes, it is possible to use list comprehension with a string. 
+n_num = [x for x in range(10) if x%1 == 0]
+print(n_num)
+
+7)
+Open the configuration dialog by selecting preferences in the application menu,For more details see Setting preferences under Help and preferences.
+
+8)
+we need to write the main program in C++, and use the C++ compiler to compile and link our program.
+
+9)
+Wrapper is also known as decorator,used to modify the behaviour of function or a class.
+A wrapped feature is a machine learning algorithm used to find all possible iterations for a perfect fit for a dataset.
+
+10)
+Generator function returns a object along with a sequence of values.
+ 
+11)
+A yeild statement must be made to the function.
+
+12)
+Time efficient and memory efficient, increases code readability.

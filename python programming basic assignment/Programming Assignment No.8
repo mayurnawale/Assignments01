@@ -1,0 +1,67 @@
+1)
+X = [[11,5,2],
+    [3 ,7,8],
+    [8,4,6]]
+
+Y = [[5,8,1],
+    [6,7,3],
+    [4,5,9]]
+
+result = [[0,0,0],
+         [0,0,0],
+         [0,0,0]]
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        result[i][j] = X[i][j] + Y[i][j]
+
+for r in result:
+    print(r)
+
+2)
+X = [[11,5,2],
+    [3,7,8],
+    [8,4,6]]
+
+Y = [[5,8,1],
+    [6,7,3],
+    [4,5,9]]
+
+result = [[0,0,0],
+         [0,0,0],
+         [0,0,0]]
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        result[i][j] = X[i][j] * Y[i][j]
+
+for r in result:
+    print(r)
+
+3)
+X = [[12,7],
+    [4 ,5],
+    [3 ,8]]
+
+result = [[0,0,0],
+         [0,0,0]]
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        result[j][i] = X[i][j]
+
+for r in result:
+    print(r)
+
+4)
+my_str = "Hello this Is an Example With cased letters"
+words = [word.lower() for word in my_str.split()]
+words.sort()
+for word in words:
+   print(word)
+
+5)
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+my_str = "Hello!!!, i was  ---there."
+no_punct = ""
+for char in my_str:
+   if char not in punctuations:
+       no_punct = no_punct + char
+print(no_punct)

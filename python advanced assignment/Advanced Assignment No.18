@@ -1,0 +1,31 @@
+1)
+Each line of text is terminated with a special character, which is the new line character (‘\n’).
+While binary files are where there is no termination of line and data is stored only after the files are converted in binary.
+
+2)
+Text files are usually preferred as there is minor chances of data getting corrupted. 
+Binary files are used when the data includes (audio, video and text) in a single file. 
+
+3)
+they’re denoted with strange-looking symbols instead of words.
+
+4)
+it is guaranteed to close the file no matter how the nested block exits.
+
+5)
+Yes,but does not append automatically.
+
+6)
+clearcache(), lazycache(), getline(file,x), updatecache(), getlines().
+
+7)
+The struct package is used to convert data types in cases of strings and numbers and vice versa. 
+
+8)
+A process used when you are required to store a python object into a database/file or to transport data over the network.
+
+9)
+Accessed by keys its best to use shelve when arbitrary python objects are needed to be pickled using a dictionary like API.
+
+10)
+Only string data type can be used as key in this special dictionary object,whereas any picklable Python object can be used as value.

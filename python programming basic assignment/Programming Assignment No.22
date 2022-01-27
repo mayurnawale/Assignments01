@@ -1,0 +1,66 @@
+1)
+def list_operation(x,y,n):
+    lst=[]
+    for i in range(x,y+1):
+        if(i%n==0):
+            lst.append(i)
+    return(lst)
+
+
+x=int(input("start of the range: "))
+y=int(input("end of the range: "))
+n=int(input("divisor n: "))
+print(list_operation(x,y,n))
+
+2)
+def simon_says(l1 , l2):
+    l3 = l1[0:-1]
+    l4 = l2[1:]
+    if(l3 == l4):
+        return True
+    else:
+        return False
+    
+l1=[1,2]
+l2=[5,5]
+print(simon_says(l1 , l2))
+
+3)
+def society_name(li):
+    l2=[]
+    for i in range(len(li)):
+        l2.append(li[i][0])
+    l3 = sorted(l2)
+    for i in range(len(l3)):
+        print(l3[i] , end="")
+    
+li=["Adam" , "Sarah" , "Monica"]
+society_name(li)
+
+4)
+def is_isogram(word):
+    clean_word = word.lower()
+    letter_list = []
+    for letter in clean_word:
+        if letter.isalpha():
+            if letter in letter_list:
+                return False
+            letter_list.append(letter)
+ 
+    return True
+s="Algorism"
+is_isogram(s)
+
+5)
+def is_in_order(s):
+    for i in range(len(s)-1):
+        if(s[i] > s[i+1]):
+            return False
+        else:
+            continue
+    return True
+    
+    
+    
+s=input()
+print(is_in_order(s))

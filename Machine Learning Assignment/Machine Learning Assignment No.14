@@ -1,0 +1,149 @@
+1)
+-It is a method used to enable machines to clasify objects,problems or situations based on related data fed into the machines.
+-It is a popular technology or concept that is applied to real life scnaerios.
+-It is defined by its use of labeled datasets to train algorithms that to classify data or predict outcomes accurately.
+
+Significance:
+-It allows collecting data and produces data output from previous experiences.help to optimize performance criteria with the help of experience.
+-It helps to solve various type of real world computation problems.
+-These turns data into real actionable insights.it enables organization to use data to understand and prevent unwanted outcomes or boost desired outcomes for their target variable.
+
+2)
+Example of supervised learning in hospital sector:
+-Identifying diseases and diagnosis.
+-Drug discovery and manufacturing.
+-Medical imaging diagnosis.
+-Personalized medicine.
+-Smart helth records.
+-Clinical trail and reserch.
+-Better radiotherapy.
+
+3)
+Example of supervised learning:
+i)Linear regression for regression problems.
+ii)Random foresst for classification and regression problems.
+iii)Support vector machine for classification problems.
+    
+4)
+Classification in supervised learning:
+a classification algorithm is a supervised learning technique that is used to indentify the category of new observation on the basis of training data.In classification a program learns from the given dataset or observations and then classifies new observation into a number of classes or group.
+    
+Regression in supervised learning:
+Regression analysis is a subfield of supervised machine learning.It aims to model the relationship between a certain no of features and a continuous target variable.
+
+5)
+Popular classification examples:
+i)Logistic regression
+ii)Naive Bayes
+iii)K-nearest neighbors
+iv)Decision tree
+v)Support vector machines
+    
+6)
+SVM Model:
+Support Vector Machine is a supervised machine learning algorithm that can be used for both classification or regression challenges.
+Support vectors are simply the coordinates of indivisual observations.
+The SVM classifier is a frontier that best segregates the two classes.
+The advantages of super vector machines are effective in high dimensional spaces.still effective in cases where number of dimensions is greater than the number of samples.
+The goal of the SVM algorithm is to create the best line or decision boundry than can segregate n-dimensional space into classes so that we can easily put the new data point in the correct category in the future.
+
+7)
+The cost parameter decides how much an SVM should be allowed to bend with the data.
+For a low cost you aim for a smooth decision surface and for a higher cost you aim to classify more points correctly,it called as cost of misclassification.
+In cost sensitive learning insted of each instance being either correctly of incorrectly classified each class is given a misclassification cost.
+Thus insted of trying to optimize the accuracy the problem is then to minimize the total misclassification cost.
+
+8)
+Support vectore are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane.
+Margin passes through the nearest point from each class to the hyperplane.the angle between nearest point and hyperplane is 90°.this point are reffered as support vectors.
+Using this support vector we maximize the margin of the classifier.
+Deleting the support vectors will change the position of the hyperplane.
+    
+9)
+Kernel function is is a method to take the data as a input and transfer into the required form of processing data.the amazing thing about kernel is that we can go to higher dimensions and perform smooth calculations with the help of it.we can go up to an infinite number of dimensions using kernels.
+
+10)
+Factor influence the effectiveness of SVM:
+-penalty factore
+-kernel factore
+-choosing the approprite kernel function also influence the SVM
+    
+11)
+Benefits of SVM:
+-SVM works relatively well when there is a clear margin of separation between clases.
+-SVM is more effecctive in high dimensional spaces.
+-SVM is effective in cases where the number of dimensions is greater than the number of samples.
+-SVM is relatively memoryefficient.
+    
+12)
+Drawbacks of SVM:
+-SVM algorithm is not suitable for large data set.
+-Does not perform when data set has more noice,so that target classes are overlapping.
+-Where the number number of features for each data point exceeds the number of training data sample the SVM will underperform.
+-As the support vector classifier works by putting data points,above and below the classifing hyperplane there is no probabilistic explanation for the classification.
+
+13)
+i)
+In cross-validation,instead of splitting the data into two parts,we split it into 3 steps.training data, cross-validation data, and test data.here, we use training data for finding nearest neighbors,we use cross-validation data to find the best value of “K” and finally we test our model on totally unseen test data.this test data is equivalent to the future unseen data points.
+
+ii)
+In KNN,K is the number of nearest neighbors.the number of neighbors is the core deciding factor.K is generally an odd number if the number of classes is 2.When K=1,then the algorithm is known as the nearest neighbor algorithm.
+
+iii)
+Decision tree induction is a typical inductive approach to learn knowledge on classification. Decision Tree Representation:Decision trees classify instances by sorting them down the tree from the root to some leaf node which provides the classification of the instance.
+
+14)
+Benefits of KNN algorithm:
+i)simple algorithm to interpret.
+ii)useful for regression and classification.
+iii)Quick calculation time.
+iv)high accuracy.
+    
+15)
+Drawbacks of KNN algorithm:
+i)prediction might be slow with large data.
+ii)sensitive to the scale of the data.
+iii)required the high memory.
+iv)it can computationally expensive.
+v)Accuracy depends on a quality of data.
+    
+16.
+Decision tree algorithm =
+decision tree is a graphical representation of all the possible solutions to a decision based on certain condition.
+tree model where the target varible can take a finite set of values are called classification trees and target varible can take continuous values are called regression trees.
+the tree can be explained by two entities,namely decision nodes and leaves.the leaves are the decision of final outcomes.and nodes are where data is split.
+the goal of the algorithm is to creat the modal that predicts the value of a target varible,for which the decision tree used.
+it is a part of the supervised machine learning,which is commonly used for the regression or classification.
+
+17)
+node=
+Nodes are where the data is split.
+nodes have two or more branches.
+each node represents a test on an attributes.
+    
+leaf=
+leaves are the decision or final outcome.
+leaf represents the classification or decision.
+each leaf nodes represent a class.
+
+18)
+Decision tree entropy is a measure of the purity,disorder or uncertainty of the sub split.it helps us to build an appropriate decision tree for selecting the best splitter.entropy lies between 0-1.
+
+19)
+Information gain is the reduction in entropy or surprise by transforming a dataset and is often used in training decision trees.information gain is calculated by comparing the entropy of the dataset before and after a transformation.
+
+20)
+Advantage of decision tree:
+decision tree required less effort for data preparation during pre-processing as compare to the other algorithms.
+it does not required normalization of data.
+it also not required scaling of data.
+if their is any missing value then also this value does not affect this process.
+decision tree model is very inbuilt and easy to explain.
+
+21)
+Flaws in the decision tree process:
+a small change in the data can cause a large change in the structure of decision tree.in this proccess calculation can go a far complex.it required a higher time to drain the model.this proccess is expensive as compare to other.
+    
+22.
+Random forest model:
+Random forest model is a supervised machine learning algorithm that is widely used in classification and regression.it builds decision tree on different samples and takes their majority vote for classification and average in case of regression.it performs better result for classification problem.random forest is great with high dimensional data since we are working with subsets of data.

@@ -1,0 +1,59 @@
+1)
+Prior probability is the probability of an event before new data is collected.this is the best rational assessment of the probability of an outcome based on the current knowledge before an experiment is performrd.prior probability representing knowledge and uncertainty of a data object prior or before observing it.
+example:In the mortage case P(Y) is the default rate on a home mortage which is 2%.
+
+2)
+Posterior probability is the revised or updated probability of an event occuring after taking into consideration new imformation.it is calculated by updating the prior probability using baye's theorem.Posterior distribution representing what parameters are likely after observing data object.
+example: According to data around 60% of student who start college will graduate within 6 years.
+    
+3)
+Probability is about a finite set of possible outcomes,where as likehood is about an infinite set of possible probabilities,given an outcome.it has the ability of obtaining the observed data given the parameter values.
+example: if L(θ2|x)=2L(θ1|x) and L(θ|x) ∝ L(θ|y) ∀ θ, then L(θ2|y)=2L(θ1|y).
+therfore we observed x or y we would come to the conclusion that θ2 is twice as possible as θ1.
+
+4)
+It is a classifer which is used the Bayes therom.this algorithm use to classify the objects.it predicts the membership probabilities for each class such as the probability that given record or data point belongs to a particular class .the class with the highest probability is considered as the most likely class.
+Naive bayes is called naive because it assumes that each input variable is independent.this is a strong assumption and unrealistic for real data however the technique is very effective on a large range of complex problem.
+    
+5)
+Optimal bayes classifier is a probabilistic model that makes the most probable prediction for a new example.it is a probabilistic model that finds the most probable pridiction using the training data and a space of hypotheses to make a predictin for a few data instance.
+
+6)
+Features of Bayesian learning methods:
+-this provide a more flexible approach to learning the algorithms that completely eliminate a hypothesis if it is found to be inconsistent with any single example.
+-a probability distribution over observed data for each possible hypothesis.
+-new instances can be classified by combining the prediction of multiple hypotheses,weighted by their probabilities.
+-this method can accommodate hypotheses that make probabilistic predictions.
+
+7)
+A learner L using a hypothesis H and training data D is said to be a consistent learner if it always outputs a hypothesis with zero error on D whenever H contains such a hypothesis.
+a consistent learner must produce a hypothesis in the version space for H given D.therefore to bound the number of examples needed by a consistent learner we just need to bound the number of examples needed to ensure that the version space contains no hypotheses with unacceptably high error.
+    
+8)
+Strengths of Bayes classifier:
+-Simple and easy to implement.
+-Doesn't require as much training data.
+-It handles both continuous and discrete data.
+-It is not sensitive to irrelevant features.
+    
+9)
+Weakness of Bayes Classifier:
+-Its estimations can be wrong in some cases,so you should not take its probability output very seriously.
+-It predict that all predictors are independent,rarely happening in real life.this limits the applicability of this algorithm in real world use cases.
+-this algorithm faces the zero frequeny problem where is assigns zero probability to a categorical variable whose category in the test data set wasn't available in the training dataset.
+
+10)
+i)Text classification
+-this algorithm is a simple classification algorithm which uses probability of the events for its purpose.It based on the bayes theorem which assumes that their is no interdependence amongs the variable.
+-calculating these probabilities will help us calculate probabilities of the words in the text.
+-it is easy and fast to predict class of test data set.It also perform well in multiclass prediction.
+-when assumptions of independence holds a naive bayes classifier performs better compare to other models like logostic regression and you need less training data.
+
+ii) Spam filtering
+-Bayes classifier filter build a list of unwanted words over time.they analyse both spam messages and good messages to calculate the probabilty of various characteristics appearing in spam and in good mail .then new unwanted words are added to the list.
+-we want to find the probability an email is spam,given it contains certain words.
+-we do this by finding the probability that each word in email is spam,and then multiply these probability together to get the overall email spam metric to be used in classification.
+
+iii) Market sentiment analysis
+-Multinominal naive bayes classification algorithm tends to be a baseline solution for sentiment analysis task.
+-the basic idea of naive bayes technique is to find the probabilities of classes assigned to texts by using the joint probabilities of words and classes.to avoid underflow log probabilities can be used.

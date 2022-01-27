@@ -1,0 +1,33 @@
+1)
+-Both the float and decimal types store numerical values in python.
+
+-Use floats when convenience and speed matter.a float gives you an approximation of the number you declare.
+
+-Use decimals when precision matters.decimal can suffers from their own precision issues,but generally.decimals are more precise than floats.the performance difference between float and decimals with python 3 is not outlandish and in my experience,the precision benefits of a decimal outweigh the performance benefits of a float.
+
+2)
+Both values are same but internal representation at storage is different.precision differs,decimal ('1.200') gives internally 1.200 and decimal ('1.2') gives 1.2.
+
+3)
+Both values are checked to be equal,they only differ in precision.
+
+4)
+Floating point value is converted to decimal format.decimal can store float value with absolute precision.but when float value is given as Decimal object,it first has to be converted from floating point value which might already have rounding error.hence it is preferable to start a decimal object with a string.
+
+5)
+We can do it with use of Decimal().
+
+6)
+Arithmetic operations like Adding,Subtracting or multiplying a decimal object by a floating point value is generates an error.to do these operations,the floating point has to be converted to a decimal.
+
+7)
+value of 0.5 will be represented as 1/2.
+
+8)
+0.00011 is a finite representation of an infinite number of digits,that doesn't help us with floating-point.floating-point does not represent numbers using repeat bars.
+
+9)
+Both will be reduced to 1/2.
+
+10)
+Fraction class and integer type(int) are related in form of a container.it contains two ints or one the numerator and the other the denominator.

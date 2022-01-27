@@ -1,0 +1,54 @@
+1)
+Greedy syntax will try to match multiple repetitions of the pattern as possible.
+Non greedy will try to match quite few repetitions of the pattern.
+=
+import re
+print(re.findall("v*", "vvvvvv")) 
+print(re.findall("v*?", "vvvvvv"))
+    
+2)
+-The greedy match will try to match as many repetitions of the quantified pattern as possible.
+-The non greedy match will try to match as few repetitions of the quantified pattern as possible.
+-If only non greedy match is available we can use other filtering or pattern matching methods of regex and further indentify the requirement pattern.
+    
+3)
+In this case the non tagged group will not make any difference in this case.
+=
+import re
+phoneNumRegex = re.compile(r'\d\d\d')
+num = phoneNumRegex.search('My number is 111-222-333.')
+print(f'Phone number found -> {num.group()}') 
+print(f'Phone number found -> {num.group(0)}')
+    
+4)
+Here in the below code snippet.decimal is not tagged or captured.it will usefull in scenerios where the separator of values in a string is of no use and we need to capture only the values.
+=
+import re
+text='111.222'
+pattern=r'(\d+)(?:.)(\d+)'
+regobj=re.compile(pattern)
+matobj=regobj.search(text)
+matobj.groups()
+
+5)
+While counting the number of multiple lines or multiple sentences in a string the positive look ahead makes a difference.without which we wont get the currect count of lines or sentences in a string.
+    
+6)
+Positive lookahead:(?=<<pattern>>) matches if pattern matches what comes after the current location in the input string.
+Negative lookahead:(?!<<pattern>>) matches if pattern does not match with what comes after the current location in the input string.
+
+7)
+It makes the code more organized and readable as compared to number referencing.
+    
+8)
+=
+import re
+text = "The cow jumped over the moon"
+regobj=re.compile(r'(?P<w1>The)',re.I)
+regobj.findall(text)
+    
+9)
+re.findall() module is used to search for all occurrences that match a given pattern.in contrast re.search() will only return the first occurrences that matches the specified pattern.re.findall() will iterate over all the lines of the file and will return all non overlapping matches of pattern in a single step.
+
+10)
+yes,it may have any name.

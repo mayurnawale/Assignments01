@@ -1,0 +1,55 @@
+1)
+Arrays represents multiple data items of the same type using a single name.in arrays the element can be accessed randomly by using the index number.arrays allocate memory in contiguous memory location for all its element.hence their is no chance of extra memory being allocated in case arrays.this avoids memory overflow or shortage of memory in arrays.
+
+
+2)
+-The no of element to be stored in array should be known in advance.an array is a static structure.once declare the size of the array cannot be modified.the memory which is allocated to it cannot be increased or decreased.
+-insertion and deletion are quite difficult in an array as the elements are stored in consecutive memory location and the shifting operation is costly.
+-allocating more memory than the requirements leads to wastage of memory space and less allocation of memory also leads to a perform.
+
+
+3)
+-The array package doesn't provide any help with numerical calculation with the items inside it in number from while numpy give you a wide variety of numerical operations.
+An array is a single dimensional entity which hold the numerical data,while numpy can have more than 1 dimension.
+-In case of array item can be accessed by its index position and it is easy task while in numpy item is accessed by its column and row index.which make it slightly time taking.same goes with appending operation.in case of array we do not form a tabular structure while in numpy it forms a tabular structure.
+
+
+4)
+Empty function:
+-An empty function is a function that that does not contain any statement within its body.if you try to write function defination without any statement in python.it will return an error to avoid this we use pass statement.pass is special statement in python that does nothing.it only work as a dummy statement.
+Ones function:
+-this function returns new array of given shape and data type.where the element value is 1.
+Zeros function:
+this function returns a new array of given shape and data type.where the element value is 0.
+
+
+5)
+its function is to execute the function over each coordinates and the resulting array.the function is called with N parameters,where N is the rank of shape.each parameters represents the coordinates of the array varying along a specific axis.
+
+
+6)
+if any scalar value such as integer is added to the numpy array then all the elements inside the array will add that value in it.
+
+
+7)
+it will carry out provided operation on all elements of array.
+
+
+8)
+Yes,it is possible that we can include a string of fixed length in numpy array,the type of any numpy array containing string value in the maximum length of string present in the array.once set it will only be able to store new string having length not more than the maximum length at the time of the creation.if we try to ressaign some another string value having length greater than the maximum length of the existing elements.it simply discards all the values beyond the maximum length accept upto those values which are under the limit.
+
+
+9)
+it will simply add or multiply element to element at some position.
+
+
+10)
+the best way to use a boolean array to mask another array is by using masked_where of numpy package.
+
+
+11)
+np.std and math package can be used individually.
+
+
+12)
+it will have same dimensionality as input array.

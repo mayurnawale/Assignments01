@@ -1,0 +1,32 @@
+1)
+  lambda returns a value that can optionally be assigned a name.whereas the def statement always assigns the new function to the name in the header, instead of returning value. lambda's body is a single expression, not a block of statements.
+
+2)
+-They can be used whenever function objects are required.
+-they provides shortcut for declaring small functions.
+-they behave just like regular functions.
+
+3)
+  map creates a new array by transforming every element in an array.
+  filter creates a new array by removing elements that don't belong.
+  reduce takes all of the elements in an array and reduces them into a single value.
+
+4)
+  Function annotations provide a way of associating various parts of a function with arbitrary python expressions at compile time.
+
+5)
+  recursive functions is a process in which a function calls itself directly or indirectly.it is used to solving problems that can be broken down into smaller problems.
+
+6)
+general guidelines for coding functions.
+-limited use of globals.
+-Use 4-space indentation and no tabs.
+-standard headers for different modules.
+-Use docstrings bcoz there are both single and multiline docstrings that can be used in Python.
+-Wrap lines so that they don't exceed 79 characters,the Python standard library is conservative and requires limiting lines to 79 characters.
+
+7)
+-return():
+-def():
+-print():
+-myFun():

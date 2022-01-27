@@ -1,0 +1,14 @@
+1)
+  Walrus operator,positional only arguments,new syntax warrnings types of features added in python 3.8 version.
+
+2)
+  Monkey patching means to dynamic modifications of a class or a module.we can actually change the behavior of code at run time.
+
+3)
+  Shallow Copy stores the references of objects to the original memory address.deep copy stores copies of the object’s value.shallow Copy reflects changes made to the new object in the original object.deep copy doesn’t reflect changes made to the new object in the original object.shallow copy is faster compared to deep copy.
+
+4)
+  The maximum possible length of an identifier is 79 characters.
+
+5)
+  It is a single line specification for defining a generator in Python.it is absolutely essential to learn this syntax in order to write simple and readable code.

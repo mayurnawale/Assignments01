@@ -1,0 +1,15 @@
+1)
+   The list comprehension is enclosed in square brackets[],while the generator expression is enclosed in plain parentheses().
+
+2)
+  Iterators are used mostly to iterate other objects to an iterator using iter() function.Generators are used in loops to generate an iterator by returning all the values in the loop without affecting the iteration.Every iterator is not a generator but every generator is an iterator.
+
+3)
+  whenever generator function generate a value, it does so with the yield keyword rather than return. If the body of a def function contains yield, the function is an generator function.
+
+4)
+  purpose behind yield keyword is used that it will prevent the function from exciting until the next time is called.
+
+5)
+  List comprehension is more concise and easier to read as compared to map. List comprehension are used when a list of results is required as map only returns a map object and does not return any list. Map is faster in case of calling an already defined function.
+  

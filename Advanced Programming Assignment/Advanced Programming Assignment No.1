@@ -1,0 +1,65 @@
+1)
+def check_score(in_list):
+    check_dict = {'#':5,'O':3,'X':1,'!':-1,'!!':-3,'!!!':-5}
+    out_num = 0
+    for ele in in_list:
+        for sub_ele in ele:
+            out_num += check_dict[sub_ele]
+    if(out_num < 0):
+        print(f'check_score({in_list}) ➞ {0}')
+    else:
+        print(f'check_score({in_list}) ➞ {out_num}')
+check_score([["#", "!"],["!!", "X"]])
+check_score([["!!!", "O", "!"],["X", "#", "!!!"],["!!", "X", "O"]])
+
+2)
+def combinations(*args):
+    out_num = 1
+    for ele in args:
+        out_num *=ele
+    print(f'combinations{args} ➞ {out_num}')
+combinations(2, 3)
+combinations(3, 7, 4)
+combinations(2, 3, 4, 5)
+
+3)
+def encode_morse(in_string):
+    out_string = ''
+    char_to_dots = {
+            'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
+            'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
+            'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
+            'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
+            'Y': '-.--', 'Z': '--..', ' ': ' ', '0': '-----',
+            '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....',
+            '6': '-....', '7': '--...', '8': '---..', '9': '----.',
+            '&': '.-...', "'": '.----.', '@': '.--.-.', ')': '-.--.-', '(': '-.--.',
+            ':': '---...', ',': '--..--', '=': '-...-', '!': '-.-.--', '.': '.-.-.-',
+            '-': '-....-', '+': '.-.-.', '"': '.-..-.', '?': '..--..', '/': '-..-.'
+        }
+    for ele in in_string:
+        out_string +=char_to_dots[ele]
+    print(f'encode_morse({in_string}) ➞ {out_string}')
+encode_morse("EDABBIT CHALLENGE")
+encode_morse("HELP ME !")
+
+4)
+def prime(in_num):
+    out_bool = False
+    if ((in_num-1)%6 == 0) or ((in_num+1)%6 == 0):
+        out_bool = True
+    print(f'prime({in_num}) ➞ {out_bool}')
+prime(7)
+prime(56963)
+prime(5151512515524)
+
+5)
+def to_boolean_list(in_string):
+    alphabets = 'abcdefghijklmnopqrstuvwxyz'
+    out_list = []
+    for ele in in_string:
+        out_list.append(bool((alphabets.index(ele)+1)%2))
+    print(f'to_boolean_list({in_string}) ➞ {out_list}')
+to_boolean_list("deep")
+to_boolean_list("loves")
+to_boolean_list("tesh")

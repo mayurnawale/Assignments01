@@ -1,0 +1,83 @@
+1)
+class filter_list:
+    
+    def display(self , tmp):
+        for i in range(len(tmp)):
+            print(tmp[i] , end=" ")
+            
+    def fun(self , lst):
+        tmp=[]
+        for i in range(len(lst)):
+            if(lst[i].isdigit()):
+                tmp.append(int(lst[i]))
+        display(tmp)
+    
+    def __str__(self):
+        return "Class Created"
+ob = filter_list()
+lst = []
+n = int(input("enter the length of list: "))
+for i in range(n):
+    lst.append(input())
+ob.fun(lst)
+
+2)
+class Reverse:
+    def reverse(self , string):
+        lst=[]
+        for i in range(len(string)):
+            if(string[i].isupper()):
+                lst.append(string[i].lower())
+            elif(string[i].islower()):
+                lst.append(string[i].upper())
+                
+        l = len(lst)-1
+        while(l>=0):
+            if(lst[l]==" "):
+                print(" ")
+            else:
+                print(lst[l],end="")
+                l-=1
+    
+    def __str__(self):
+        return "Class Created"
+ob = Reverse()
+string = input()
+ob.reverse(string)
+
+3)
+class myClass:
+    def fun(self , lst):
+        first = lst[0]
+        middle = lst[1:-1]
+        last = lst[-1]
+        print(first)
+        print(middle)
+        print(last)
+    def __str__(self):
+        return "Class Created"
+ob=myClass()
+lst = [1,2,3,4,5,6]
+ob.fun(lst)
+
+4)
+def fact(n):
+    if(n==1):
+        return n
+    else:
+        return(n*fact(n-1))
+
+    
+n = int(input())
+ob.fact(n)
+
+5)
+def move_to_end(lst , num):
+    lst.append(lst.pop(lst.index(num)))
+    print(lst)
+lst = []
+n = int(input("enter the length of list: "))
+for i in range(0,n):
+    lst.append(int(input()))
+num=int(input("Enter number to shift: "))
+move_to_end(lst , num)

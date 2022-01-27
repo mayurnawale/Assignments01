@@ -1,0 +1,24 @@
+1)
+  result=1,2,8
+  The function named func has one parameter without a default argument value, followed by two parameters with default arguments.
+in this func(1,2) "a" gets the value 1, "b" gets the value 2 and "c" gets the default value of 8.
+
+2)
+   result=1,2,3
+in this func(1, c=3, b=2) "a" gets its default value,i.e 1."b" gets it"s function value=2 & "c" also gets function value=3.
+
+3)
+  result=1,(2,3)
+in this func(a,*args) as "a" gets its separate value and *args gets other value is in combined form i.e.(2,3).
+
+4)
+ result=1 {'c': 3, 'b': 2}
+As a is exluded in the function command it remains the same and new values are assigned to (b,c) to add more flexibility to functions.
+
+5)
+  result=1 5 6 5
+It generates the output as * command is used and function assigns the values.
+    
+6)
+  result=(1, ['x'], {'a': 'y'})
+m[1] is ['x'] here it is taking b[0] = 'x' values in the second position that is 1.

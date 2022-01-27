@@ -1,0 +1,46 @@
+1)
+def is_symmetrical(n):
+    rev = str(n)[::-1]
+    if rev == str(n):
+        return True
+    return False
+# now we can check the examples.
+
+
+2)
+def multiply_nums(s):
+    s = s.replace(' ', "")
+    s = s.split(',')
+    sum = 1
+    for i in s:
+        sum = sum * int(i)
+    return sum
+# now we can check the examples.    
+
+
+3)
+def square_digits(n):
+    sq = ''.join(str(int(i)**2) for i in str(n))
+    return int(sq)
+# now we can check the examples.
+
+
+4)
+def setify(l):
+    m = []
+    l.sort()
+    l = set(l)
+    for i in l:
+        m.append(i)
+    return m
+# now we can check the examples.
+
+
+5)
+def mean(n):
+    sum = 0
+    lenth = len(str(n))
+    for i in str(n):
+        sum = sum+ int(i)
+    return int(sum/lenth)
+# now we can check the examples.

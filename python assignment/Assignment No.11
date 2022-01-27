@@ -1,0 +1,40 @@
+1)
+  assert spam >= 10, 'The spam variable is less than 10.'
+  
+2)
+  eggs = 'hello'
+  bacon = 'good bye'
+  assert eggs.lower() != bacon.lower(), 'eggs/bacon should not be the same!
+  
+3)
+  assert False, 'This assertion always triggers.'
+
+4)
+  import logging
+  logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -
+  %(levelname)s - %(message)s')
+  
+5)
+ import logging
+ logging.basicConfig(filename='programLog.txt', level=logging.DEBUG,
+ format=' %(asctime)s - %(levelname)s - %(message)s')
+ 
+6)
+  DEBUG, INFO, WARNING, ERROR, and CRITICAL
+
+7)
+  logging.disable(logging.CRITICAL)
+
+8)
+  we can disable logging messages without removing the logging function calls,also we can selectively disable lower-level logging messages and also we can create logging messages.
+
+9)
+  Step over – An action to take in the debugger that will step over a given line. If the line contains a function the function will be executed and the result returned without debugging each line.
+  Step into – An action to take in the debugger. If the line does not contain a function it behaves the same as “step over” but if it does the debugger will enter the called function and continue line-by-line debugging there.
+  Step out – An action to take in the debugger that returns to the line where the current function was called.
+  
+10)
+  click Go, the debugger will stop when it has reached the end of the program with a breakpoint.
+
+11)
+  Breakpoint is a setting on a line of code that causes the debugger to pause when the program execution reaches the line.

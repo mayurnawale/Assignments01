@@ -1,0 +1,29 @@
+1)
+  RGBA means Red-Green-Blue-Alpha,the format of the RGBA Value.
+
+2)
+  Import the image module from the Pillow library from PIL import Image,Open any image and get the RAGBAG values.img =Image.open('image.png') & rgba =img.convert(“RGBA”)Change the color,data will be an imaging Core object containing thousands of tuples of RGBA values and finally store the changed image.
+
+3)
+  Tuple is a data structure that is employed to store multiple data at one time.the data stored in a tuple are heterogeneous and this indeed makes it the most powerful feature of the tuple in Python.
+
+4)
+  at first create an empty Markdown cell,then drag-and-drop the image file into the empty Markdown cell and then 
+  image = PIL. 
+  Image.open("sample.png") image to open.
+  width, height = image. size. extract width and height from output tuple.
+  print(width, height)
+
+5)
+   the resize() method to resize the image.
+6)
+  save() saves this image under the given filename,if no format is specified then the format to use is determined from the filename extension.
+
+7)
+  ImageDraw=Pillow provides a drawing module called ImageDraw that can use to create simple 2D graphics on our Image objects.
+
+8)
+  GeometryDrawing=Draws a shape.
+  ImageDrawing=Draws an image
+  VideoDrawing=Plays an audio or video file
+  DrawingGroup=Draws other drawings,use a drawing group to combine other drawings into a single composite drawing.

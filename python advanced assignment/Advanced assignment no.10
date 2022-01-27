@@ -1,0 +1,11 @@
+1)
+  __getattr__ gets called if there is no attribute in the instance.__getattribute__ gets called all the times,whether there is the attribute or not.
+  __getattr__ gets called last(lowest priority),if Python cannot find the attribute.__getattribute__ gets called first(highest priority),whether or not there’s the attribute.
+
+2)
+  descriptors are a low-level mechanism that lets you hook into an object's attributes being accessed.properties are a high-level application of this;that is properties are implemented using descriptors.
+
+
+3)
+  A key difference between __getattr__ and __getattribute__ is that __getattr__ is only invoked if the attribute wasn't found the usual ways.__getattribute__ is invoked before looking at the actual attributes on the object and so can be tricky to implement correctly.
+  Descriptors simplify the underlying C code and offer a flexible set of new tools for Python programs.The property() method takes the get, set and delete methods as arguments and returns an object of the property class.

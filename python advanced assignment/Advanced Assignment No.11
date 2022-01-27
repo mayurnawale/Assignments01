@@ -1,0 +1,12 @@
+1)
+  In object-oriented programming, a metaclass is a class whose instances are classes. Just as an ordinary class defines the behavior of certain objects, a metaclass defines the behavior of certain classes and their instances. Not all object-oriented programming languages support metaclasses.
+
+2)
+  best way is "to set __metaclass__ at the module level".because this way all classes of this module will be created using this metaclass and we just have to tell the metaclass to turn all attributes to uppercase.
+
+3)
+  decorators can manage both instances and classes,the converse is not as direct.metaclasses are designed to manage classes and applying them to managing instances is less straightforward.
+
+4)
+  class decorators as a tool for augmenting instance creation calls.Because they work by automatically rebinding a class name to the result of a function,though there's no reason that we can't use them to augment the class before any instances are ever created.
+   In metaclassesbecause the decorator returns the original class,instances are made from it, not from a wrapper object.in fact instance creation is not intercepted at all.

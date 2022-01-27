@@ -1,0 +1,71 @@
+1)
+import operator
+ops = {'+':operator.add,'-':operator.sub,'*':operator.mul,'//':operator.floordiv}
+def arithmetic_operation(in_string):
+    in_list = in_string.split(" ")
+    output = ops[in_list[1]](int(in_list[0]),int(in_list[2])) if int(in_list[2]) != 0 else -1
+    print(f'arithmetic_operation({in_list[0]} {in_list[1]} {in_list[2]}) ➞ {output}')
+arithmetic_operation("12 + 12")
+arithmetic_operation("12 - 12")
+arithmetic_operation("12 * 12")
+arithmetic_operation("12 // 0")
+
+2)
+import math
+def distance(a,b):
+    return math.sqrt(pow((b[1]-a[1]),2)+pow((b[0]-a[0]),2))
+def perimeter(in_array):
+    perimeter = []
+    for ele in range(len(in_array)):
+        if ele == len(in_array)-1:
+            perimeter.append(distance(in_array[ele],in_array[0]))
+        else:
+            perimeter.append(distance(in_array[ele],in_array[ele+1]))
+    print(f'perimeter({in_array}) ➞ {sum(perimeter):.2f}')
+perimeter([[15,7],[5,22],[11,1]])
+perimeter([[0,0],[0,1],[1,0]])
+perimeter([[-10,-10],[10,10],[-10,10]])
+
+3)
+def tallest_skyscraper(in_list):
+    out_list = []
+    for num in range(len(in_list)):
+        count = 0
+        for ele in range(len(in_list[num])):
+            count += in_list[ele][num]
+        out_list.append(count)
+    print(f'tallest_skyscraper({in_list}) ➞ {max(out_list)}')
+tallest_skyscraper([[0, 0, 0, 0],[0, 1, 0, 0],[0, 1, 1, 0],[1, 1, 1, 1]])
+tallest_skyscraper([[0, 1, 0, 0],[0, 1, 0, 0],[0, 1, 1, 0],[1, 1, 1, 1]])
+tallest_skyscraper([[0, 0, 0, 0],[0, 0, 0, 0],[1, 1, 1, 0],[1, 1, 1, 1]])
+
+4)
+def bonus(int_num):
+    if int_num > 48:
+        output = 0+(8*325)+(8*550)+((int_num-48)*600)
+    elif int_num < 48 and int_num >= 41:
+        output = 0+(8*325)+((int_num-41+1)*550)
+    elif int_num >33 and int_num <= 40:
+        output = 0+((int_num-33+1)*325)
+    else:
+        output = 0
+    print(f'bonus({int_num}) ➞ {output}')
+bonus(15)
+bonus(37)
+bonus(50)
+
+5)
+def is_disarium(in_num):
+    sum = 0
+    output = False
+    for ele in range(len(str(in_num))):
+        sum += int(str(in_num)[ele])**(ele+1)
+    if in_num == sum:
+        output=True
+    print(f'is_disarium({in_num}) ➞ {output}')
+is_disarium(75)
+is_disarium(135)
+is_disarium(544)
+is_disarium(518)
+is_disarium(466)
+is_disarium(8)

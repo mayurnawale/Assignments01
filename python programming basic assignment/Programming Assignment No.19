@@ -1,0 +1,70 @@
+1)
+def double_char(s):
+    count=0
+    lst=[]
+    for i in range(len(s)):
+        char = s[i]
+        for j in range(i,len(s)):
+            if(s[j] == char):
+                count+=1
+        for k in range(0,count+1):
+            lst.append(char)
+        count=0
+    for l in range(len(lst)):
+        print(lst[l],end='')
+s="String"
+double_char(s)
+
+2)
+def reverse(r):
+    if(r=='True'):
+        r=bool(r)
+        if(type(r)==bool):
+            return False
+    if(r=='False'):
+        r=bool(r)
+        if(type(r)==bool):
+            return True
+    else:
+        return "boolean expected"
+r=input()
+print(reverse(r))
+
+3)
+def num_layer(n):
+    if(n==0 or n==1):
+        return n/1000
+    else:
+        result=0.5
+        t=4
+        for i in range(1 , n):
+            result=0.5*t
+            t*=2
+        return result/1000
+           
+
+n=int(input())
+print(num_layer(n) ,'m')
+
+4)
+def index_of_caps(s):
+    lst=[]
+    for i in range(len(s)):
+        if(s[i].isupper()):
+            lst.append(i)
+    print(lst)
+            
+s=input()
+index_of_caps(s)
+
+5)
+def find_even_nums(n):
+    lst=[]
+    for i in range(1,n+1):
+        if(i%2==0):
+            lst.append(i)
+    print(lst)
+
+            
+n=int(input())
+find_even_nums(n)

@@ -1,0 +1,24 @@
+1)
+iNeuron
+the variable is assigned a string and displayed when the function is called..
+
+2)
+iNeuron
+the variable is assigned a string and displayed when the function is called..
+
+3)
+NI!
+iNeuron
+Here print (X) is called twice which calls all the values assigned to it.
+
+4)
+NI!
+The global function assigns the new string as a value for X.
+
+5)
+iNeuron
+The nested function assigns values one by one, it helps define function inside another function.
+
+6)
+No output
+As null value is newly assigned to the variable.

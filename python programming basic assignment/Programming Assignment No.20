@@ -1,0 +1,61 @@
+1)
+class filter_list:
+    def display(self , tmp):
+        for i in range(len(tmp)):
+            print(tmp[i] , end=" ")
+    def fun(self , lst):
+        tmp=[]
+        for i in range(len(lst)):
+            if(lst[i].isdigit()):
+                tmp.append(int(lst[i]))
+        display(tmp)
+    def __str__(self):
+        return "Class Created"
+ob = filter_list()
+lst = []
+n = int(input("enter the length of list: "))
+for i in range(n):
+    lst.append(input())
+ob.fun(lst)
+
+2)
+def add_indexes(lst):
+    for i in range(len(lst)):
+        lst[i]+=i
+    return(lst)
+lst=[]
+n = int(input())
+for i in range(n):
+    lst.append(int(input()))
+add_indexes(lst)
+
+3)
+def cone_volume(r,h):
+    vol_cone=(1/3)*(3.14)*(r*r)*(h)
+    return vol_cone
+cone_volume(3,2)
+
+4)
+def triangle(n):
+    flag=1
+    lst=[1]
+    tmp=2
+    for i in range(1,n):
+        flag+=tmp
+        lst.append(flag)
+        tmp+=1
+    return lst[n-1]
+
+n=int(input())
+triangle(n)
+
+5)
+def missing_num(lst):
+    for ele in range(1, max(lst) + 1):
+        if ele not in lst:
+            return ele
+lst = []
+n = int(input("enter the length of list: "))
+for i in range(n):
+    lst.append(int(input()))
+missing_num(lst)

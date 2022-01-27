@@ -1,0 +1,36 @@
+1)
+  60 * 60
+  3600
+
+2)
+  seconds_per_hour = 60 * 60
+  seconds_per_hour
+  3600
+
+3)
+  seconds_per_hour * 24
+  86400
+
+4)
+  seconds_per_day = seconds_per_hour * 24
+  seconds_per_day
+  86400
+ 
+5)
+  seconds_per_day / seconds_per_hour
+  24.0
+
+6)
+  yes.this number agree with the floating-point value.
+
+7)
+  def genPrimes():
+    primes = [2]
+    yield primes[0]
+    guess = 3
+    while True:
+        if all(guess%x != 0 for x in primes):
+            primes.append(guess)        
+        if guess == primes[-1]:
+            yield primes[-1]
+        guess += 2
