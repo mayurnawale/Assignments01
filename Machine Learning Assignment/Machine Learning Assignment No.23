@@ -1,0 +1,35 @@
+1)
+key reasons for reducing the dimensionality of a dataset:
+-Space required to stored the data is reduced as the number of dimensions comes down.
+-Less dimensions lead to less computation / training time.
+-some algorithms do not perform well when we have a large dimensions.
+    
+Disadvantages of Dimensionality Reduction:
+-It may lead to some amount of data loss.
+-PCA tends to find linear correlation between variables.which is sometime undesirable.
+-PCA failes in cases where mean and covariance are not enough todefine datasets.
+    
+
+2)
+The curse of dimensionality basically means that the error incrases with the increase in the number of features.it refers to the fact that algorithms are harder to design in high dimensions and often have a running time exponential in the dimensions.
+
+3)
+No,dimensionality reduction is not reversible in general.
+    
+4)
+it depends on dataset.if it is comprised of points that are perfectly aligned.PCA can reduce the dataset down to 1 dimensions and preserve 95% of the variance.
+    
+5)
+If we perform PCA on a 1000 dimensional dataset setting the explained variance ration to 95%. in this case roughly 950 dimensions are required to preserve 95% of the variance.so the answer is it depends on the dataset,and it could be any number between 1 and 950.
+    
+6)
+-Vanilla PCA - the dataset fit in memory.
+-Incremental PCA - Target dataset that that don,'t fit in memory online task.
+-Randomized PCA - Considerably reduce dimensionality and the dataset fit in the memory.
+-Kernel PCA - used for nonlinear PCA.
+
+7)
+By doing PCA it is a good choice for dimensionality reduction and visualization for detasets with a large number of variables.
+
+8)
+Indeed,it often makes any sense to chain two different dimensionality reduction algorithm. A common example is using PCA to quickly get rid of a large number of useless dimensions,then applying another much slower dimensionality reduction algorithm such as LLE.
